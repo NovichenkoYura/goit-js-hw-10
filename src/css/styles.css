@@ -18,3 +18,19 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+.country-list {
+  list-style: none;
+}
+
+input {
+  margin-left: 35px;
+}
+
+.country-info {
+  margin-left: 40px;
+}
+
+.country-info p span {
+  font-weight: 700;
+}
