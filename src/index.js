@@ -35,7 +35,7 @@ function markUp(countries) {
 
 function countriesMarkupList(countries) {
     const markUpCountrieslist = countries.map(({ name, flags }) => {
-            return `<li><p><img style="width: 30px; margin-right 20px" src="${flags.svg}" alt="">${name.official}</p> </li>`
+            return `<li><p><img style="width: 60px; margin-right: 20px" src="${flags.svg}" alt="">${name.official}</p> </li>`
         })
             .join('');
         countryList.insertAdjacentHTML('beforeend', markUpCountrieslist);
@@ -45,7 +45,7 @@ function oneCountryMarkup(countries) {
     const oneCountry = countries
              .map(({ name, capital, population, flags, languages }) => {
         return `
-  <h1><img style="width: 30px; margin-right: 20px" src="${flags.svg}">${
+  <h1><img style="width: 60px; margin-right: 20px" src="${flags.svg}">${
           name.official
         }</h1>
   <p><span>Capital: </span>${capital}</p>
